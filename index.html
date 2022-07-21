@@ -2,17 +2,19 @@
 <html lang = "pt-br">
 <head>
     <meta charset = "UTF-8">
+    
     <link rel = "stylesheet" type = "text/css" href = "./css/CSSReset.css">
     
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel ="preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel = "stylesheet">
-   
-    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
     
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+
     <title>La Vie Store</title>
 </head>
-
 <body>
     <header>
                
@@ -25,13 +27,12 @@
             
         <nav class="menu">
             <ul>
-                <li class = "itemMenu todos"><a href = "#" style= "text-decoration:none">Todos</a></li>
-                <li class = "itemMenu outros"><a href = "#" style= "text-decoration:none">Acessórios</a></li>
-                <li class = "itemMenu outros"><a href = "#" style= "text-decoration:none">Calçados</a></li>
-                <li class = "itemMenu outros"><a href = "#" style= "text-decoration:none">Camisetas</a></li>
+                <li class = "itemMenu ativo">Todos</li>
+                <li class = "itemMenu naoAtivo">Acessórios</li>
+                <li class = "itemMenu naoAtivo">Calçados</li>
+                <li class = "itemMenu naoAtivo">Camisetas</li>
             </ul>
         </nav>
-
 
     </header>
 
@@ -40,74 +41,7 @@
         <section class = "produtos">
 
             <ul>
-
-                <li class = "itemProduto">
-                    <img src = "./img/jaqueta.svg" alt = "" height = "150px" width = "290">                    
-                    <div class = "dadosCard">
-                        <h3 class = "categoria">Camisetas</h3>
-                        <h2 class = "nomeProduto">Lightweight Jacket</h3>
-                        <p class = "descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
-                        <p class = "preco">R$ 439.90</p>
-                        <button class = "add-to-cart-button">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-
-                <li class = "itemProduto">
-                    <img src = "./img/gorro.svg" alt="" height = "150px" width = "290">
-                    <div class = "dadosCard">
-                        <h3 class = "categoria">Acessórios</h3>
-                        <h2 class = "nomeProduto">Black Hat</h3>
-                        <p class = "descricao">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...
-                        </p>
-                        <p class = "preco">R$ 159.90</p>
-                        <button class = "add-to-cart-button">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-
-                <li class = "itemProduto">
-                    <img src = "./img/mascara.svg" alt="" height = "150px" width = "290">
-                    <div class ="dadosCard">
-                        <h3 class = "categoria">Acessórios</h3>
-                        <h2 class = "nomeProduto">Mask</h3>
-                        <p class = "descricao">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
-                        <p class = "preco">R$ 89.90</p>
-                        <button class ="add-to-cart-button">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-
-                <li class = "itemProduto">
-                    <img src = "./img/camiseta_branca.svg" alt = "" height = "150px" width = "290">
-                    <div class = "dadosCard">
-                        <h3 class = "categoria">Camisetas</h3>
-                        <h2 class = "nomeProduto">T-Shirt</h3>
-                        <p class = "descricao">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
-                        <p class = "preco">R$ 169.90</p>
-                            <button class = "add-to-cart-button">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-
-                <li class = "itemProduto">
-                    <img src = "./img/camiseta_preta.svg" alt = "" height = "150px" width = "290">
-                    <div class = "dadosCard">
-                        <h3 class = "categoria">Camisetas</h3>
-                        <h2 class = "nomeProduto">Short-Sleeve T-Shirt</h3>
-                        <p class = "descricao">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais fino...</p>
-                        <p class = "preco">R$ 239.90</p>
-                        <button class = "add-to-cart-button">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-
-                <li class = "itemProduto">
-                    <img src = "./img/moletom.svg" alt = "" height = "150px" width = "290">
-                    <div class = "dadosCard">
-                        <h3 class = "categoria">Camisetas</h3>
-                        <h2 class = "nomeProduto">Champion Packable Jacket</h3>
-                        <p class = "descricao">Proteja-se dos elementos com esta jaqueta embalável Champion.Esta jaqueta de poliést...</p>
-                        <p class = "preco">R$ 459.90</p>
-                        <button class = "add-to-cart-button">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-
+            
             </ul>
 
         </section>
@@ -118,61 +52,14 @@
                 <input class = "inputPesquisar" placeholder = "Digite aqui sua pesquisa" type = "text">
                 <button class = "buttonPesquisar">Pesquisar</button>
             </section>
-
+            
             <section class = "carrinhoCompra">
-
-                <p class = "tituloCarrinho">Carrinho de compras</p>
-
-                <ul class = "produtosCarrinho">
-
-                    <li class = "itemCarrinho">
-                        <img class = "imgProdtoCarrinho" src = "./img/gorro.svg" alt = "" height = "67" width = "88">
-                        <div class = "carrinhoProdutoDetalhes">
-                            <h2 class = "tituloProdutoCarrinho">Black Hat</h2>
-                            <p class = "preco">R$159.90</p>
-                            <button class = "removerProduto">Remover Produto</button>
-                        </div>
-                    </li>
-
-                    <li class = "itemCarrinho">
-                        <img class = "imgProdtoCarrinho" src = "./img/camiseta_branca.svg" alt =" " height = "67" width = "88">
-                        <div class = "carrinhoProdutoDetalhes">
-                            <h2 class = "tituloProdutoCarrinho">T-Shirt</h2>
-                            <p class = "preco">R$169.90</p>
-                            <button class = "removerProduto">Remover Produto</button>
-                        </div>
-                    </li>
-
-                    <li class = "itemCarrinho">
-                        <img class = "imgProdtoCarrinho" src = "./img/camiseta_preta.svg" alt = "" height = "67" width = "88">
-                        <div class = "carrinhoProdutoDetalhes">
-                            <h2 class = "tituloProdutoCarrinho">Short-Sleeve T-Shirt</h2>
-                            <p class = "preco">R$239.90</p>
-                            <button class = "removerProduto">Remover Produto</button>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <div class = "resumoCompra">
-
-                    <div class = "detalhes quantidade">
-                        <p>Quantidade:</p>
-                        <p>3</p>
-                    </div>
-
-                    <div class = "detalhes Total">
-                        <p>Total:</p>
-                        <p>R$569.70</p>    
-                    </div>
-
-                </div>
-
+                
             </section>
-
+            
         </aside>
 
     </main>
-      
+    
 </body>
 </html> 
