@@ -1,0 +1,443 @@
+header{
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.26);
+
+}
+
+figcaption{
+
+    display: none;
+
+}
+
+.logo-image{
+
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-left: 122px; 
+    cursor: pointer;
+
+}
+
+nav.menu ul{
+
+    display: flex;
+    padding-right: 117px;
+
+}
+
+a:link{
+
+    text-decoration:none;
+    color:black;
+
+}
+
+a:visited{
+
+    text-decoration:none;
+    color:black;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+    color:black;
+
+}
+
+a:active{
+
+    text-decoration:none;
+    color:black;
+
+}
+
+li.itemMenu{
+
+    padding-left: 20px;
+    font-size: 16px;    
+
+}
+
+.todos{
+
+    font-weight: 600;
+
+}
+.outros{
+
+    font-weight: 400;
+
+}
+
+li.itemMenu:hover{
+
+    font-size: 18px;
+    /*color: #2E245E;*/
+    color: #000000;
+    cursor: pointer;
+    font-weight: 400;
+
+}
+
+main.container{
+
+    margin: 0 115px;
+    margin-top: 32px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+
+}
+
+.produtos{
+    
+    width: 1008px;
+
+}
+
+
+.produtos ul{
+    max-width: 1008px;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+li.itemProduto{
+    
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 408px;
+    width: 296px;
+    border: 3px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    cursor : pointer;
+
+}
+
+li.itemProduto:hover{
+
+    border: 3px solid #000000;
+    transform: translateY(-5px);
+    transition: all .5s ease-in-out;
+
+}
+
+div.dadosCard{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 296px;
+    height: 254px;
+    padding: 15px;
+    
+}
+
+h3.categoria{
+
+    color: white;
+    background-color: #000000;
+    width: 70px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+
+h2.nomeProduto{
+
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+
+}
+
+p.descricao{
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #828282;
+
+}
+
+p.preco{
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+
+}
+
+button.add-to-cart-button{
+
+    border: none;
+    background-color: white;
+    display: flex;
+    padding: 0;
+
+}
+
+button.add-to-cart-button{
+
+    border: none;
+    background-color: white;
+    display: flex;
+    padding: 0;
+    width: 130px;
+
+}
+
+button.add-to-cart-button:hover{
+
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer; 
+
+}
+
+aside.container{
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+section.pesquisa{
+
+    margin-bottom: 30px;
+
+}
+
+input.inputPesquisar{
+
+    height: 50px;
+    width: 235px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #F5F5F5;
+    padding-left: 14px;
+}
+
+input.inputPesquisar::placeholder{
+
+    color: #828282;
+    
+}
+
+
+button.buttonPesquisar{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 95px;
+    height: 50px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+
+}
+
+section.carrinhoCompra{
+
+    max-width: 345px;
+    width: 345px;
+    max-height: 505px;
+    height: 505px;
+    background-color: #F5F5F5;
+
+}
+
+p.tituloCarrinho{
+
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #000000;
+    color: white;
+
+}
+
+
+ul.produtosCarrinho{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 345px;
+    height: 345px;
+    overflow: auto;
+}
+
+div.listaVazia{
+    width: 347px;
+    Height:214px;
+    background-color: #F5F5F5;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p.textoCarrinhoVazioTitulo{
+
+    font-size: 22px;
+    color: #333333;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+
+p.textoCarrinhoVazio{
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #828282;
+
+}
+
+
+h2.tituloCarrinho{
+
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #000000;
+    color: white;
+
+}
+
+ul.produtosCarrinho{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 347px;
+    max-height: 345px;
+    overflow: auto;
+    background-color: #F5F5F5;
+
+}
+
+.esconder{
+
+    visibility: hidden;
+
+}
+
+::-webkit-scrollbar{
+
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    display: flex;
+    width: 21px;
+    
+}
+
+::-webkit-scrollbar-thumb{
+
+    background-color: #828282;
+    border-radius: 10px;
+    width: 21px;
+    border: 7px solid #F5F5F5;
+
+}
+
+li.itemCarrinho{
+
+    display: flex;
+    align-items: center;
+    height: 92px;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 14px;
+
+}
+
+div.carrinhoProdutoDetalhes{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 92px;
+    width: 100%;
+
+}
+
+h2.tituloProdutoCarrinho{
+
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    
+}
+
+button.removerProduto{
+
+    border: 0;
+    background-color: #F5F5F5;
+    padding: 0;
+
+}
+
+button.removerProduto:hover{
+
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+div.resumoCompra{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detalhes{
+
+    height: 63px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 14px;
+    padding-right: 26px;
+
+}
+
